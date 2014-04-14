@@ -1,0 +1,39 @@
+#layers {
+  padding-top: 40px;
+}
+
+#layers .layer {
+  margin-left:100px;
+  width:800px;
+
+  display: -webkit-flex;
+  -webkit-justify-content: flex-end;
+  -webkit-align-items: flex-start;
+  -webkit-perspective: 1000;
+  -webkit-perspective-origin: left bottom; }
+  #layers .layer p {
+    text-align: left;
+    -webkit-flex: 1 1 auto;
+    border-bottom: 0.1em solid rgba(255, 255, 255, 0.4); }
+    #layers .layer img {
+      margin: 0;
+      padding: 0; }
+      #layers .layer figure {
+        width: 10em;
+        height: 6em;
+        -webkit-transform-origin: right top;
+        -webkit-transform: rotatex(35deg) translate(-100px, -50px);
+        -webkit-filter: drop-shadow(0 1em 0.5em rgba(0, 0, 0, 0.5));
+        background-repeat: none;
+        background-size: cover;
+        /*background-color: #d67917;*/
+        background-blend-mode: overlay; }
+        #layers .layer.overlay figure {
+        background-image: url("../img/overlay.png");
+                  }
+          #layers .layer.control figure {
+        background-image: url("../img/control.png");
+ }
+            #layers .layer.ground figure {
+                      background-image: url("../img/ground.png");
+}
